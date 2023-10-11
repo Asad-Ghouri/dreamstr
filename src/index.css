@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+ 
+
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: url(./asserts/bg2.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* background-position: 109% 109%; */
+    color: white!important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Header Styles */
+/* Style the header container */
+.header {
+  /* background-color: #007BFF; Blue background color */
+  padding: 10px;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+      margin-left: -26px;
+}
+
+/* Style the navbar */
+.navbar {
+  /* display: flex; */
+  align-items: center;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: end;
+}
+
+.nav-list1{
+  justify-content:left;
+}
+
+/* Style the nav items */
+.nav-item {
+  margin-right: 20px; /* Add spacing between nav items */
+  list-style: none;
+}
+
+/* Style the nav links */
+.nav-link {
+  color: #fff; /* Text color */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s; /* Smooth color transition on hover */
+
+  /* Style for when the link is hovered */
+  &:hover {
+    color: #FFA500; /* Change text color on hover */
+  }
+}
+
+/* Style the icon */
+.nav-link svg {
+  font-size: 24px; /* Adjust the icon size */
+  margin-right: 8px; /* Add spacing between the icon and text */
+}
+
+/* Style the User Form link */
+.nav-link:last-child {
+  margin-right: 0; /* Remove right margin for the last nav item */
+}
+
+
+
+/* ----admin page--- */
+/* Admin Control Panel Styles */
+.admin-panel {
+  /* background-color: #f5f5f5; */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: -3rem;
+  /* margin-top: 0; */
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Form Fields Styles */
+
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select {
+  width: 100%;
+  width: 92%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+/* Buttons Styles */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  /* background-color: #0056b3; */
+}
+
+.add-button {
+  background-color: #28a745;
+}
+
+.add-button:hover {
+  /* background-color: #218838; */
+}
+
+/* Field List Styles */
+.field-list {
+  list-style: none;
+  padding: 0;
+}
+
+.field-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: #fff;
+}
+
+.field-item button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 15px;
+  cursor: pointer;
+  z-index: 223;
+
+  /* transition: background-color 0.3s ease; */
+}
+
+.field-item button:hover {
+  background-color: #c82333;
+}
+
+/* Save Button Styles */
+.save-button {
+  margin-top: 20px;
+  background-color: #17a2b8;
+}
+
+.save-button:hover {
+  /* background-color: #138496; */
+}
+
+
+
+/* Modal class */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  z-index: 2131!important;
+  align-items: center;
+}
+
+/* Modal content class */
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  padding: 20px;
+  position: relative;
+  width: 75%;
+}
+
+/* Close button class */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.close:hover {
+  color: #007aff; /* iOS blue color */
+}
+
+/* Input field class */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+}
+
+/* Select field class */
+.select-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23007aff'><path d='M6 10l6-8H0z'/></svg>")
+    no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px auto;
+  padding-right: 30px;
+}
+
+/* Checkbox field class */
+.checkbox-field {
+  /* -webkit-appearance: none; */
+  /* appearance: none; */
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.checkbox-field:checked {
+  background-color: #007aff;
+  border: 1px solid #007aff;
+}
+
+/* Form group class for grouping related elements */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Button class */
+.add-button {
+  /* background-color: #007aff; */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid;
+  color: white;
+  margin-top: 30px;
+
+}
+
+.add-button:hover {
+  /* background-color: #0056b3; Slightly darker blue on hover */
+}
+
+/* Label class */
+label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.field-list div{
+  text-align: center;
+  font-size: 23px;
+  margin-top: 20px;
+}
+
+.addq{
+  display: flex;
+  justify-content: center;
+}
+
+.custom-button {
+  cursor: pointer;
+  background: transparent;
+  /* border: 2px solid #007bff; Customize the border color */
+  /* color: #007bff;  */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  border: 2px solid;
+  color: white;
+}
+
+.custom-button:hover {
+  /* background: #007bff; Customize the hover background color */
+  color: white; /* Customize the hover text color */
+}
+
+#fontSelect{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background: none;
+  border: 1px solid;
+  color: white;
+}
+
+.textArea{
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    height: 5rem;
+}
+
+.add-buttonas{
+  background-color: #007aff;
+}
+
+.ColorSelector    
+{
+  margin-top: 4px;
+}
+
+.addQues{
+  padding: 24px 20px;
+  margin-top: 35px;
+}
+
+.logoimg{
+  width: 198px;
+  margin-left: 14px;
+}
+
+body {
+  font-family: "Mulish", sans-serif!important;
+}
+
+@media(max-width:600px){
+
+  .headerg{
+    flex-direction: row!important;
+  }
+  .llinks a {
+    margin-right: 13px!important; 
+}
+}
+
+.active {
+  font-weight: bold; /* Style for the active link */
+}
+@media(min-width:600px){
+
+  .userpage{
+    margin-top: -4rem!important;
+  }
+
+}
+a{
+  color: white!important;
+}
+label{
+  color: white!important;
+}
