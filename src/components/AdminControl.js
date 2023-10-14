@@ -217,6 +217,23 @@ const AdminControl = () => {
           Submit
         </SubmitButton>
       </Container>
+
+      <div class="instructions-container instructions-container1">
+  <div class="instructions-title">Claim Your DSTER Token</div>
+  <div class="instructions-text">If you have not yet provided your wallet address to claim your DSTER token, please follow these steps:</div>
+  <div class="instructions-text">1. Please provide the full name you used during the participation. This will help us verify your eligibility.</div>
+  {/* <input class="input-field" type="text" placeholder="Full Name" /> */}
+  <div class="instructions-text">2. To ensure we can contact you for verification and token distribution, please provide your valid email address.</div>
+  {/* <input class="input-field" type="email" placeholder="Email Address" /> */}
+  <div class="instructions-text">3. This is where we'll send your DSTER token. Make sure it's an ERC-20 compatible wallet address.</div>
+  {/* <input class="input-field" type="text" placeholder="ERC-20 Wallet Address" /> */}
+  <div class="instructions-text">4. Review the details you've entered to ensure accuracy and submit.</div>
+  {/* <button class="submit-button">Submit</button> */}
+  <div class="instructions-text">5. Our team will review the details provided to confirm your eligibility and whitelist status.</div>
+  <div class="instructions-text">6. If your information is verified and you're on the whitelist, we will send your DSTER token to the provided wallet address.</div>
+  <div class="support-text">If you have any questions or need assistance during the claiming process, don't hesitate to reach out to our support team. Thank you for participating in Dreamster, and enjoy your DSTER token!</div>
+</div>
+
     </div>
   );
 };

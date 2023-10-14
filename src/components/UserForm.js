@@ -3,6 +3,7 @@ import axios from "axios";
 import styled from "styled-components";
 import Header from "./Header";
 // Styled components for styling the form
+import { Link , NavLink } from 'react-router-dom';
 import { toast } from "react-toastify";
 const Container = styled.div`
   max-width: 400px;
@@ -213,6 +214,34 @@ const UserForm = () => {
           Submit
         </SubmitButton>
       </Container> */}
+      <div className="instructions-container">
+      <div className="instructions-title">Claim Your Dster Tokens</div>
+      <div className="instructions-text">
+        To claim your Dster tokens, follow these simple steps:
+      </div>
+      <div className="instructions-text">
+        1. Enter your name as it appears on the whitelist.
+      </div>
+      {/* <input className="input-field" type="text" placeholder="Your Name" /> */}
+      <div className="instructions-text">
+        2. Enter your wallet address. Ensure it is accurate to ensure a seamless token transfer.
+      </div>
+      {/* <input className="input-field" type="text" placeholder="Your Wallet Address" /> */}
+      <div className="instructions-text">
+        3. Confirm your submission, and our system will promptly process your request.
+      </div>
+      {/* <button className="submit-button">Submit</button> */}
+      <div className="instructions-text">
+        4. Once your claim is verified and processed, you'll receive your Dster token directly in your wallet.
+      </div>
+      <div className="instructions-text">
+      5. if you have not provided your wallet address, <NavLink to="/admin" className="link-a">Click here</NavLink> to apply for your Dster
+         
+      </div>
+      <div className="support-text">
+        If you have any questions or require assistance during the claiming process, our support team is here to help. Enjoy your Dster token and all the exciting opportunities it brings!
+      </div>
+    </div>
     </div>
   );
 };
