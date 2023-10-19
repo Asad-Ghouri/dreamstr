@@ -7,6 +7,11 @@ import { toast } from "react-toastify";
 import Image from "../asserts/img.png"
 import Header from "./Header";
 
+import Img1 from "../asserts/7.png"
+import Img2 from "../asserts/8.png"
+import Img3 from "../asserts/9.png"
+import Img4 from "../asserts/10.png"
+
 const Container = styled.div`
   max-width: 400px;
   margin: 0 auto;
@@ -218,21 +223,83 @@ const AdminControl = () => {
         </SubmitButton>
       </Container>
 
-      <div class="instructions-container instructions-container1">
+  {/* <div class="instructions-container instructions-container1">
   <div class="instructions-title">Claim Your DSTER Token</div>
   <div class="instructions-text">If you have not yet provided your wallet address to claim your DSTER token, please follow these steps:</div>
   <div class="instructions-text">1. Please provide the full name you used during the participation. This will help us verify your eligibility.</div>
-  {/* <input class="input-field" type="text" placeholder="Full Name" /> */}
   <div class="instructions-text">2. To ensure we can contact you for verification and token distribution, please provide your valid email address.</div>
-  {/* <input class="input-field" type="email" placeholder="Email Address" /> */}
   <div class="instructions-text">3. This is where we'll send your DSTER token. Make sure it's an ERC-20 compatible wallet address.</div>
-  {/* <input class="input-field" type="text" placeholder="ERC-20 Wallet Address" /> */}
   <div class="instructions-text">4. Review the details you've entered to ensure accuracy and submit.</div>
-  {/* <button class="submit-button">Submit</button> */}
   <div class="instructions-text">5. Our team will review the details provided to confirm your eligibility and whitelist status.</div>
   <div class="instructions-text">6. If your information is verified and you're on the whitelist, we will send your DSTER token to the provided wallet address.</div>
   <div class="support-text">If you have any questions or need assistance during the claiming process, don't hesitate to reach out to our support team. Thank you for participating in Dreamster, and enjoy your DSTER token!</div>
-</div>
+</div> */}
+      
+      <center>
+    <h1 className="instructions-title">Claim Your Dster Tokens</h1>
+    </center>
+    <center>
+      <div className="instructions-text">
+      If you have not yet provided your wallet address to claim your DSTER token, please follow these steps:
+      </div>
+    </center>
+          <div className="d-flex a-c">
+            <div className="texts">
+                  <h1>
+                  Please provide the full name 
+                  </h1>
+                  <p>
+                  You used during the participation. This will help us verify your eligibility
+                  </p>
+            </div>
+            <div className="img">
+            <img src={Img1} alt="" />
+            </div>
+          </div>
+
+          <div className="d-flex a-c">
+          <div className="img">
+            <img src={Img2} alt="" />
+            </div>
+            <div className="texts">
+                  <h1>
+                  To ensure we can contact you for verification
+                  </h1>
+                  <p>
+                   Token distribution, please provide your valid email address
+                  </p>
+            </div>
+          </div>
+
+          <div className="d-flex a-c">
+            <div className="texts">
+                  <h1>
+                  This is where we'll send your DSTER token.
+                  </h1>
+                  <p>
+                  Make sure it's an ERC-20 compatible wallet address.
+                  </p>
+            </div>
+            <div className="img">
+            <img src={Img3} alt="" />
+            </div>
+          </div>
+       
+
+          <div className="d-flex a-c pbs">
+          <div className="img">
+            <img src={Img4} alt="" />
+            </div>
+            <div className="texts">
+                  <h1>
+                  Review the details you've entered
+                  </h1>
+                  <p>
+                  Our team will review the details provided to confirm your eligibility and whitelist status.
+                  </p>
+            </div>
+          </div>
+
 
     </div>
   );
