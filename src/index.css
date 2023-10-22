@@ -528,7 +528,7 @@ label{
 }
 
 .video-container,.pbs{
-  margin-bottom: 68rem;
+  margin-bottom: 25rem;
 }
 @media(min-width:600px){
   .d-flex{
@@ -538,10 +538,10 @@ label{
 }
 @media(max-width:600px){
   .video-container  {
-    margin-bottom: 85rem;
+    margin-bottom: 29rem;
   }
 
   .pbs {
-    margin-bottom: 96rem;
+    margin-bottom: 32rem;
   }
 }

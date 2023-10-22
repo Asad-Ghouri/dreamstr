@@ -52,7 +52,7 @@ const Header = () => {
 
       </Logo>
       <Links className='llinks'>
-        <NavLink to="/admin">Apply your DSTER</NavLink>
+        <NavLink to="/admin">Apply for DSTER</NavLink>
         <NavLink to="/">Claim for DSTER</NavLink>
       </Links>
     </HeaderContainer>
