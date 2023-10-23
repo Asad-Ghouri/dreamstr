@@ -4,8 +4,8 @@ import styled from "styled-components";
 import Header from "./Header";
 // Styled components for styling the form
 import Img1 from "../asserts/4.png"
-import Img2 from "../asserts/5.png"
-import Img3 from "../asserts/6.png"
+import Img2 from "../asserts/wallet.png"
+import Img3 from "../asserts/C3.png"
 
 import { Link , NavLink } from 'react-router-dom';
 import { toast } from "react-toastify";
@@ -156,7 +156,7 @@ const UserForm = () => {
     >
          <Header/>
       <div>
-        <Container className="userpage">
+        {/* <Container className="userpage">
           <Label>Name:</Label>
           <Input
             type="text"
@@ -181,7 +181,7 @@ const UserForm = () => {
           >
             Claim Now
           </SubmitButton>
-        </Container>
+        </Container> */}
       </div>
 
       {/* <Container>
@@ -295,6 +295,41 @@ const UserForm = () => {
             <img src={Img3} alt="" />
             </div>
           </div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<Container className="userpage">
+          <Label>Name:</Label>
+          <Input
+            type="text"
+            value={name}
+            onChange={(e) => {setname(e.target.value)}}
+            placeholder="Name?"
+          />
+          <br />
+          <br />
+          <Label>Wallet Address:</Label>
+          <Input
+            type="text"
+            value={contractAddress}
+            onChange={(e) => {setcontractAddress(e.target.value)}}
+            placeholder="Wallet Address?"
+          />
+          <br />
+          <br />
+          <SubmitButton
+           
+            // onClick={()=>{()}}
+          >
+            Claim Now
+          </SubmitButton>
+        </Container>
 
 <br />
 <br />

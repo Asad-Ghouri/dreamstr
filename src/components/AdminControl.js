@@ -7,10 +7,10 @@ import { toast } from "react-toastify";
 import Image from "../asserts/img.png"
 import Header from "./Header";
 
-import Img1 from "../asserts/7.png"
-import Img2 from "../asserts/8.png"
-import Img3 from "../asserts/9.png"
-import Img4 from "../asserts/10.png"
+import Img1 from "../asserts/Apply 1.png"
+import Img2 from "../asserts/Apply 2.png"
+import Img3 from "../asserts/Apply 3.png"
+import Img4 from "../asserts/Apply 4.png"
 
 const Container = styled.div`
   max-width: 400px;
@@ -153,6 +153,7 @@ const AdminControl = () => {
         backgroundPosition: "center",
         // fontFamily: selectedFont,
       }}
+      className="apply"
     >
       <Header/>
 
@@ -187,41 +188,7 @@ const AdminControl = () => {
         </Container>
       </div> */}
 
-      <Container  className="userpage">
-        {formFields.map((field, index) => (
-          <FormGroup key={index}>
-            <Label>{field.label}:</Label>
-            {field.type === "textarea" ? (
-              <textarea
-                type="text"
-                className="textArea"
-                value={formData[field.placeholder] || ""}
-                onChange={(e) => handleInputChange(e, field.placeholder)}
-                required={field.required}
-                placeholder={field.placeholder}
-                name={field.placeholder}
-              />
-            ) : (
-              <Input
-                type={field.type}
-                value={formData[field.placeholder] || ""}
-                onChange={(e) => handleInputChange(e, field.placeholder)}
-                required={field.required}
-                placeholder={field.placeholder}
-                name={field.placeholder}
-              />
-            )}
-          </FormGroup>
-        ))}
-        <SubmitButton
-         
-          onClick={() => {
-            handleFormSubmit();
-          }}
-        >
-          Submit
-        </SubmitButton>
-      </Container>
+   
 
   {/* <div class="instructions-container instructions-container1">
   <div class="instructions-title">Claim Your DSTER Token</div>
@@ -277,7 +244,7 @@ const AdminControl = () => {
                   This is where we'll send your DSTER token.
                   </h1>
                   <p>
-                  Make sure it's an ERC-20 compatible wallet address.
+                  Make sure it's an Bep-20 compatible wallet address.
                   </p>
             </div>
             <div className="img">
@@ -286,7 +253,7 @@ const AdminControl = () => {
           </div>
        
 
-          <div className="d-flex a-c pbs">
+          <div className="d-flex a-c">
           <div className="img">
             <img src={Img4} alt="" />
             </div>
@@ -299,6 +266,46 @@ const AdminControl = () => {
                   </p>
             </div>
           </div>
+
+<br />
+
+<div className="pbs">
+          <Container  className="userpage">
+        {formFields.map((field, index) => (
+          <FormGroup key={index}>
+            <Label>{field.label}:</Label>
+            {field.type === "textarea" ? (
+              <textarea
+                type="text"
+                className="textArea"
+                value={formData[field.placeholder] || ""}
+                onChange={(e) => handleInputChange(e, field.placeholder)}
+                required={field.required}
+                placeholder={field.placeholder}
+                name={field.placeholder}
+              />
+            ) : (
+              <Input
+                type={field.type}
+                value={formData[field.placeholder] || ""}
+                onChange={(e) => handleInputChange(e, field.placeholder)}
+                required={field.required}
+                placeholder={field.placeholder}
+                name={field.placeholder}
+              />
+            )}
+          </FormGroup>
+        ))}
+        <SubmitButton
+         
+          onClick={() => {
+            handleFormSubmit();
+          }}
+        >
+          Submit
+        </SubmitButton>
+      </Container>
+</div>
 
 
     </div>
