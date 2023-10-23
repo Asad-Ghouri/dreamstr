@@ -203,7 +203,7 @@ const AdminControl = () => {
 </div> */}
       
       <center>
-    <h1 className="instructions-title">Claim Your Dster Tokens</h1>
+    <h1 className="instructions-title">Apply for DSTER Tokens</h1>
     </center>
     <center>
       <div className="instructions-text">
@@ -212,7 +212,7 @@ const AdminControl = () => {
     </center>
           <div className="d-flex a-c">
             <div className="texts">
-                  <h1>
+                  <h1 className="h1">
                   Please provide the full name 
                   </h1>
                   <p>
@@ -229,7 +229,7 @@ const AdminControl = () => {
             <img src={Img2} alt="" />
             </div>
             <div className="texts">
-                  <h1>
+                  <h1 className="h1">
                   To ensure we can contact you for verification
                   </h1>
                   <p>
@@ -240,7 +240,7 @@ const AdminControl = () => {
 
           <div className="d-flex a-c">
             <div className="texts">
-                  <h1>
+                  <h1 className="h1">
                   This is where we'll send your DSTER token.
                   </h1>
                   <p>
@@ -258,7 +258,7 @@ const AdminControl = () => {
             <img src={Img4} alt="" />
             </div>
             <div className="texts">
-                  <h1>
+                  <h1 className="h1"> 
                   Review the details you've entered
                   </h1>
                   <p>
